@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --hue: 194;
+    --bg-color: hsl(var(--hue), 5%, 7%);
+    --text-color: hsl(var(--hue), 40%, 98%);
+    --primary-color: hsl(var(--hue), 100%, 63%);
+    --controls-bg-color: hsl(var(--hue), 0%, 14%);
+    --button-secondary: hsl(var(--hue), 40%, 98%);
+
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+
+html.light {
+    --text-color: ;
+    --bg-color: ;
+    --controls-bg-color: hsl(var(--hue), 0%, 14%);
+}
+
+html.light .ph-sun,
+html:not(.light) .ph-moon {
+    display: none;
+}
+
+
+.sr-only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    padding: 0px;
+    border: 0;
+    appearance: none;
+}
+
+body {
+background-color: hsl(var(--hue), 40%, 98%);
+color: hsl(var(--hue), 5%, 7%);
+
+display: grid;
+height: 100vh;
+place-content: center;
+}
+
+#app {
+    display: flex;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 19.2rem;
+}
+
+#sounds{
+    display: grid;
+    gap:3.2rem;
+    grid-template-columns: auto auto ;
+}
+
+.card{
+    border-radius: 2.4rem;
+    background-color: #E1E1E6;
+    padding: 4.8rem;
+}
+
+#timer {
+    margin-top: 5rem;
+    font-size: 12.6rem;
+    font-weight: medium;
+    font-family: 'Roboto', sans-serif;
+    color: #323238;;
+}
+
+#controls {
+    margin-top: 1.6rem;
+    padding: 2.2rem 4rem;
+    gap: 1.6rem;
+    }
+
+button {
+    background-color: transparent;
+    border: 0;
+    color: #323238;
+    cursor: pointer;
+    font-size: 6.4rem;
+}
+
+.selected{
+    background-color: #02799D;
+}
+
+.selected path{
+    fill: white;
+}
+
+
+.secondary {
+    color: var(--button-secondary);
+}
+
+
+/* controls */

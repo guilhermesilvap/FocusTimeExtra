@@ -1,0 +1,16 @@
+export const play = document.getElementById("play")
+export const stop = document.getElementById("stop")
+export const plusFive = document.getElementById("plus-five")
+export const minusFive = document.getElementById("minus-five")
+
+
+export const minutes = document.getElementById("minutes")
+export const seconds = document.getElementById("seconds")
+export const forest =  document.getElementById("floresta")
+export const forestCard = document.getElementById("forest-card")
+export const rain = document.getElementById("chuva")
+export const rainCard = document.getElementById("rain-card")
+export const fireplace = document.getElementById("lareira")
+export const fireplaceCard = document.getElementById("fireplace-card")
+export const coffeeshop = document.getElementById("cafeteria")
+export const coffeeshopCard = document.getElementById("coffeeshop-card")
